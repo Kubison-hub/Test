@@ -82,6 +82,7 @@ public class SmoothToggleMove : MonoBehaviour
             Vector3 destination = isAtStart ? targetPosition : startPosition;
             StartCoroutine(MoveToPosition(destination, moveDuration));
             isAtStart = !isAtStart;
+            SoundManager.Instance?.PlayChestSound();
         }
         else
         {

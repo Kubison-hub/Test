@@ -34,6 +34,7 @@ public class CollectibleManager : MonoBehaviour
         {
             Debug.Log("Wszystkie znajdŸki zebrane — aktywujê portal!");
             portal.SetActive(true);
+            SoundManager.Instance?.PlayPortalSound();
         }
     }
 }
