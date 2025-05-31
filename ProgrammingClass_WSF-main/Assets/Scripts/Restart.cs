@@ -8,6 +8,7 @@ public class Restart : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Guard"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SoundManager.Instance.PlayHitSound();
         }
     }
 }

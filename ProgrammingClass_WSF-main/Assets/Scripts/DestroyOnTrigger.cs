@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DestroyOnTrigger : MonoBehaviour
 {
+    public ItemUIManager uiManager;
     private CollectibleManager manager;
 
     private void Start()
@@ -15,6 +16,8 @@ public class DestroyOnTrigger : MonoBehaviour
         {
             if (manager != null) manager.Collect();
             Destroy(gameObject);
+            SoundManager.Instance?.PlayPickupSound();
+            uiManager.AddItem();
         }
     }
 }

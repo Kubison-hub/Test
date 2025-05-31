@@ -1,7 +1,9 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ClickDissapear : MonoBehaviour
 {
+    public ItemUIManager uiManager;
     public float interactionRange = 3f;
     public Color highlightColor = Color.yellow;
     public Color defaultColor = Color.white;
@@ -67,6 +69,8 @@ public class ClickDissapear : MonoBehaviour
         {
             if (manager != null) manager.Collect();
             Destroy(gameObject);
+            uiManager.AddItem();
+            SoundManager.Instance?.PlayPickupSound();
         }
         else
         {
