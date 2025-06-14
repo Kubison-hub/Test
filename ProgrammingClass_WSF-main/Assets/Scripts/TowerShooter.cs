@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class TowerShooter : MonoBehaviour
 {
-    public GameObject projectilePrefab;   // prefab pocisku
-    public Transform firePoint;           // miejsce, z którego startuje pocisk
-    public float shootInterval = 1f;      // odstêp czasu miêdzy strza³ami
+    public GameObject projectilePrefab;
+    public Transform firePoint;
+    public float shootInterval = 1f;
 
     private float timer = 0f;
 
