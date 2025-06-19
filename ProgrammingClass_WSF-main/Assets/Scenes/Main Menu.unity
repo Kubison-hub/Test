@@ -914,6 +914,8 @@ MonoBehaviour:
   hitSound: {fileID: 8300000, guid: 6e0a6331c3b954c40adc2e383bbf59b5, type: 3}
   chestSound: {fileID: 8300000, guid: 1d3423af15c2c7b4097c28915f951cd9, type: 3}
   portalSound: {fileID: 8300000, guid: 052d52f856ed7e94bb4a1f6b26bbaecf, type: 3}
+  musicVolume: 0.053
+  sfxVolume: 1
   menuMusic: {fileID: 8300000, guid: e62447d36b16d4a4ab43fb9455a9d706, type: 3}
 --- !u!4 &1086998943
 Transform:

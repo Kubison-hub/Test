@@ -15,6 +15,10 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip chestSound;
     [SerializeField] private AudioClip portalSound;
 
+    [Header("G³oœnoœæ")]
+    [Range(0f, 1f)] public float musicVolume = 0.5f;
+    [Range(0f, 1f)] public float sfxVolume = 1f;
+
     [Header("Domyœlna muzyka")]
     [SerializeField] private AudioClip menuMusic;
 
@@ -106,6 +110,7 @@ public class SoundManager : MonoBehaviour
 
         musicSource.Stop();
         musicSource.clip = newMusic;
+        musicSource.volume = musicVolume;
         musicSource.Play();
     }
 
