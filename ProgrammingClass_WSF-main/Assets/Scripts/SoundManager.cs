@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class SoundManager : MonoBehaviour
     [Header("Domyœlna muzyka")]
     [SerializeField] private AudioClip menuMusic;
 
+    
     private void Awake()
     {
         // Singleton
@@ -43,7 +45,9 @@ public class SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    
     }
+
     public void PlayPortalSound()
     {
         if (portalSound != null)
@@ -109,4 +113,11 @@ public class SoundManager : MonoBehaviour
     {
         musicSource.Stop();
     }
+
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = Mathf.Clamp01(volume);
+    }
 }
+
+
