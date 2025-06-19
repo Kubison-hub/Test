@@ -56,7 +56,7 @@ public class SoundManager : MonoBehaviour
     {
         if (portalSound != null)
         {
-            sfxSource.PlayOneShot(portalSound);
+            sfxSource.PlayOneShot(portalSound, sfxVolume);
         }
     }
     
@@ -65,7 +65,7 @@ public class SoundManager : MonoBehaviour
     {
         if (chestSound != null)
         {
-            sfxSource.PlayOneShot(chestSound);
+            sfxSource.PlayOneShot(chestSound, sfxVolume);
         }
     }
     
@@ -75,7 +75,7 @@ public class SoundManager : MonoBehaviour
     {
         if (hitSound != null)
         {
-            sfxSource.PlayOneShot(hitSound);
+            sfxSource.PlayOneShot(hitSound, sfxVolume);
         }
     }
     
@@ -84,14 +84,14 @@ public class SoundManager : MonoBehaviour
     {
         if (pickupSound != null)
         {
-            sfxSource.PlayOneShot(pickupSound);
+            sfxSource.PlayOneShot(pickupSound, sfxVolume);
         }
     }
     public void PlayClickSound()
     {
         if (clickSound != null)
         {
-            sfxSource.PlayOneShot(clickSound);
+            sfxSource.PlayOneShot(clickSound, sfxVolume);
         }
 
     }
