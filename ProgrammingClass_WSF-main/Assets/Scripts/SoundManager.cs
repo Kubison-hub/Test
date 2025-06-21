@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
@@ -14,9 +15,14 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip chestSound;
     [SerializeField] private AudioClip portalSound;
 
+    [Header("G³oœnoœæ")]
+    [Range(0f, 1f)] public float musicVolume = 0.5f;
+    [Range(0f, 1f)] public float sfxVolume = 1f;
+
     [Header("Domyœlna muzyka")]
     [SerializeField] private AudioClip menuMusic;
 
+    
     private void Awake()
     {
         // Singleton
@@ -43,12 +49,14 @@ public class SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    
     }
+
     public void PlayPortalSound()
     {
         if (portalSound != null)
         {
-            sfxSource.PlayOneShot(portalSound);
+            sfxSource.PlayOneShot(portalSound, sfxVolume);
         }
     }
     
@@ -57,7 +65,7 @@ public class SoundManager : MonoBehaviour
     {
         if (chestSound != null)
         {
-            sfxSource.PlayOneShot(chestSound);
+            sfxSource.PlayOneShot(chestSound, sfxVolume);
         }
     }
     
@@ -67,7 +75,7 @@ public class SoundManager : MonoBehaviour
     {
         if (hitSound != null)
         {
-            sfxSource.PlayOneShot(hitSound);
+            sfxSource.PlayOneShot(hitSound, sfxVolume);
         }
     }
     
@@ -76,14 +84,14 @@ public class SoundManager : MonoBehaviour
     {
         if (pickupSound != null)
         {
-            sfxSource.PlayOneShot(pickupSound);
+            sfxSource.PlayOneShot(pickupSound, sfxVolume);
         }
     }
     public void PlayClickSound()
     {
         if (clickSound != null)
         {
-            sfxSource.PlayOneShot(clickSound);
+            sfxSource.PlayOneShot(clickSound, sfxVolume);
         }
 
     }
@@ -102,6 +110,7 @@ public class SoundManager : MonoBehaviour
 
         musicSource.Stop();
         musicSource.clip = newMusic;
+        musicSource.volume = musicVolume;
         musicSource.Play();
     }
 
@@ -109,4 +118,11 @@ public class SoundManager : MonoBehaviour
     {
         musicSource.Stop();
     }
+
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = Mathf.Clamp01(volume);
+    }
 }
+
+
