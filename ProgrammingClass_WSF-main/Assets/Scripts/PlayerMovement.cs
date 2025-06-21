@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.isStopped = true;     // Zatrzymaj ruch na starcie
+        agent.ResetPath();          // Wyczyœæ wszelkie wczeœniejsze cele
     }
 
     void Update()
