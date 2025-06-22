@@ -2487,6 +2487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rotating_Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 7720999198544757001, guid: a520baa523e62054ea56275772220ff9, type: 3}
+      propertyPath: shootInterval
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
