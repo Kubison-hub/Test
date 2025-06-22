@@ -1,3 +1,4 @@
+using UnityEngine.SceneManagement;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 public class SoundManager : MonoBehaviour
@@ -25,6 +26,8 @@ public class SoundManager : MonoBehaviour
     
     private void Awake()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        
         // Singleton
         if (Instance == null)
         {
@@ -50,6 +53,25 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
     
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Main Menu")
+        {
+            if (menuMusic != null)
+            {
+                PlayBackgroundMusic(menuMusic);
+            }
+        }
     }
 
     public void PlayPortalSound()
