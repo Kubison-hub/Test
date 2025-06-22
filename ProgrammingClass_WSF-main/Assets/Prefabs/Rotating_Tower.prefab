@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3977204139722808705, guid: c7a713498d0e2514299ef5e87c85e5fd, type: 3}
   firePoint: {fileID: 4041716168619063409}
-  shootInterval: 0.8
+  shootInterval: 0.65
 --- !u!114 &1586632107890490161
 MonoBehaviour:
   m_ObjectHideFlags: 0

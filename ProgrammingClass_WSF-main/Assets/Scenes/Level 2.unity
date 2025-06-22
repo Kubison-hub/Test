@@ -3215,6 +3215,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GAME_CORE_2PLAYER
       objectReference: {fileID: 0}
+    - target: {fileID: 8208467957287075698, guid: 02f724a6284150746b6676b0981b9694, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208467957287075698, guid: 02f724a6284150746b6676b0981b9694, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.98
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
