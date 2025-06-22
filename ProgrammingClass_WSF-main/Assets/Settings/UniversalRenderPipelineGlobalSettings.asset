@@ -35,8 +35,13 @@ MonoBehaviour:
       m_List:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - rid: 7845783419693301827
       - rid: 7845783419693301828
+=======
+      - rid: 978000689728585728
+      - rid: 978000689728585729
+>>>>>>> Stashed changes
 =======
       - rid: 978000689728585728
       - rid: 978000689728585729
@@ -51,6 +56,7 @@ MonoBehaviour:
       - rid: 6852985685364965381
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - rid: 7845783419693301829
       - rid: 7845783419693301830
       - rid: 6852985685364965384
@@ -63,6 +69,20 @@ MonoBehaviour:
       - rid: 7845783419693301836
       - rid: 6852985685364965392
       - rid: 7845783419693301837
+=======
+      - rid: 978000689728585730
+      - rid: 978000689728585731
+      - rid: 6852985685364965384
+      - rid: 6852985685364965385
+      - rid: 978000689728585732
+      - rid: 978000689728585733
+      - rid: 978000689728585734
+      - rid: 978000689728585735
+      - rid: 978000689728585736
+      - rid: 978000689728585737
+      - rid: 6852985685364965392
+      - rid: 978000689728585738
+>>>>>>> Stashed changes
 =======
       - rid: 978000689728585730
       - rid: 978000689728585731
@@ -300,6 +320,7 @@ MonoBehaviour:
         m_EnableValidityChecks: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - rid: 7845783419693301827
       type: {class: URPShaderStrippingSetting, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
@@ -403,6 +424,8 @@ MonoBehaviour:
         probeVolumeBlendStatesCS: {fileID: 7200000, guid: a3f7b8c99de28a94684cb1daebeccf5d, type: 3}
         probeVolumeUploadDataCS: {fileID: 7200000, guid: 0951de5992461754fa73650732c4954c, type: 3}
         probeVolumeUploadDataL2CS: {fileID: 7200000, guid: 6196f34ed825db14b81fb3eb0ea8d931, type: 3}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
