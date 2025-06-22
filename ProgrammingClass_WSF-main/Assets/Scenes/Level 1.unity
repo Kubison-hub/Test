@@ -1048,6 +1048,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 1532177251}
+  interactionKey: 101
+  playerTransform: {fileID: 342530945}
+  symbolSettings:
+    symbol: Press E to talk
+    color: {r: 0, g: 0, b: 0, a: 1}
+    fontSize: 100
+    characterSize: 0.05
+    yOffset: 1.7
 --- !u!65 &292243319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1078,7 +1086,7 @@ Transform:
   m_GameObject: {fileID: 292243317}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03000021, y: 0.03000009, z: 1.6400003}
+  m_LocalPosition: {x: -0.03000021, y: 0.03000009, z: 3.83}
   m_LocalScale: {x: 4.606504, y: 0.27, z: 7.01}
   m_ConstrainProportionsScale: 0
   m_Children:
