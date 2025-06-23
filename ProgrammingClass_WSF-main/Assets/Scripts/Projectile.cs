@@ -21,6 +21,7 @@ public class Projectile : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SoundManager.Instance.PlayHitSound();
         }
     }
 }
