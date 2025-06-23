@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.isStopped = true;     // Zatrzymaj ruch na starcie
         agent.ResetPath();          // Wyczyœæ wszelkie wczeœniejsze cele
+        agent.updateRotation = true;
     }
 
     void Update()
