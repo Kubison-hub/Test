@@ -5998,6 +5998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: robot gracz 1
       objectReference: {fileID: 0}
+    - target: {fileID: 376165222793780836, guid: 5e40e449210a59340b7a0e44f72e46c5, type: 3}
+      propertyPath: m_Size.y
+      value: 2.32
+      objectReference: {fileID: 0}
     - target: {fileID: 1138207441144137011, guid: 5e40e449210a59340b7a0e44f72e46c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.590227

@@ -1079,8 +1079,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.55, y: 1.79, z: 1.1}
-  m_Center: {x: 0.2, y: 0.25, z: -0.04}
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &592180594
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1266,6 +1266,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bbcea42156ddd1742894f0abe314731b, type: 3}
       propertyPath: m_Name
       value: robot gracz 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bbcea42156ddd1742894f0abe314731b, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6201932754587589857, guid: bbcea42156ddd1742894f0abe314731b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2298,6 +2302,10 @@ PrefabInstance:
     - target: {fileID: 324374689414258569, guid: 5e40e449210a59340b7a0e44f72e46c5, type: 3}
       propertyPath: m_Name
       value: robot gracz 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376165222793780836, guid: 5e40e449210a59340b7a0e44f72e46c5, type: 3}
+      propertyPath: m_Size.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1138207441144137011, guid: 5e40e449210a59340b7a0e44f72e46c5, type: 3}
       propertyPath: m_LocalPosition.x
