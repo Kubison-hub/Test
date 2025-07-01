@@ -114,7 +114,7 @@ namespace DialogueEditor
             // Draw icon
             float difference = BOX_HEIGHT - ICON_SIZE;
             Rect iconRect = new Rect(boxRect.x + BUFFER, boxRect.y + difference * 0.5f, ICON_SIZE, ICON_SIZE);
-            EditorGUI.DrawRect(iconRect, Color.white);
+            EditorGUI.DrawRect(iconRect, Color.green);
             Rect tmpt = new Rect(iconRect);
             tmpt.x += 2f;
             tmpt.y += ICON_SIZE * 0.1f;
