@@ -15,7 +15,7 @@ public class TriggerMover : MonoBehaviour
     public float moveDuration = 0.5f;
 
     [Header("Interakcja")]
-    public float interactionDistance = 5f;
+    public float interactionDistance = 8f;
 
     private Vector3 initialPosition;
     private bool isMoving = false;
@@ -33,7 +33,7 @@ public class TriggerMover : MonoBehaviour
             if (wallObstacle != null)
             {
                 wallObstacle.carving = true;
-                wallObstacle.carveOnlyStationary = false; // upewnij siê ¿e mo¿e carvingowaæ podczas ruchu
+                wallObstacle.carveOnlyStationary = false; // upewnij siï¿½ ï¿½e moï¿½e carvingowaï¿½ podczas ruchu
                 wallObstacle.enabled = true; // Na starcie zablokowane
             }
         }
@@ -61,7 +61,7 @@ public class TriggerMover : MonoBehaviour
     {
         isMoving = true;
 
-        CloseWall(); // zablokuj dostêp
+        CloseWall(); // zablokuj dostï¿½p
 
         Vector3 targetPosition = initialPosition + moveDirection.normalized * moveDistance;
         Vector3 startPos = targetObject.position;
@@ -108,7 +108,7 @@ public class TriggerMover : MonoBehaviour
     IEnumerator ResetCarving()
     {
         wallObstacle.enabled = false;
-        yield return new WaitForSeconds(0.05f); // krótka przerwa by Unity zresetowa³ carving
+        yield return new WaitForSeconds(0.05f); // krï¿½tka przerwa by Unity zresetowaï¿½ carving
         wallObstacle.carving = true;
         wallObstacle.carveOnlyStationary = false;
         wallObstacle.enabled = true;
